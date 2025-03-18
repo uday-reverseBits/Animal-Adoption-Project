@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+              --color-clifford: #da373d;
+            }
+          </style>
     <title>Document</title>
 </head>
 
@@ -45,8 +51,144 @@
 
 
     <main>
-        <section class="animal-section ">
+        <section class="animal-section container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="h-64 overflow-hidden">
+                    <img src="/images/pet1.jpg" alt="Golden Retriever" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                        Golden Retriever
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Friendly and loving 2-year-old Golden Retriever. Great with kids and other pets. Loves playing fetch!
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
+                            Adopt Me
+                        </button>
+                        <button class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="h-64 overflow-hidden">
+                    <img src="/images/pet2.jpg" alt="Siberian Husky" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                        Siberian Husky
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Energetic 1-year-old Husky. Perfect for active families. Loves running and adventure!
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
+                            Adopt Me
+                        </button>
+                        <button class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="h-64 overflow-hidden">
+                    <img src="/images/pet3.jpg" alt="Persian Cat" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                        Persian Cat
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Gentle 3-year-old Persian cat. Loves cuddles and quiet environments. Very affectionate!
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
+                            Adopt Me
+                        </button>
+                        <button class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="h-64 overflow-hidden">
+                    <img src="/images/pet4.jpg" alt="Labrador" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                        Labrador
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Sweet 4-year-old Labrador. Great family dog, well-trained and loves swimming!
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
+                            Adopt Me
+                        </button>
+                        <button class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="h-64 overflow-hidden">
+                    <img src="/images/pet5.jpg" alt="Maine Coon" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                        Maine Coon
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Majestic 2-year-old Maine Coon. Friendly giant who loves attention and playtime!
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
+                            Adopt Me
+                        </button>
+                        <button class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="h-64 overflow-hidden">
+                    <img src="/images/pet6.jpg" alt="German Shepherd" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+                        German Shepherd
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Loyal 3-year-old German Shepherd. Intelligent and protective, perfect for security-minded families!
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
+                            Adopt Me
+                        </button>
+                        <button class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="script.js"></script>
