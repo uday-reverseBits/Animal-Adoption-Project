@@ -11,6 +11,8 @@
     --color-orange-500: oklch(0.705 0.213 47.604);
     --color-orange-600: oklch(0.646 0.222 41.116);
     --color-orange-700: oklch(0.553 0.195 38.402);
+    --color-green-100: oklch(0.962 0.044 156.743);
+    --color-green-500: oklch(0.723 0.219 149.579);
     --color-slate-200: oklch(0.929 0.013 255.508);
     --color-slate-600: oklch(0.446 0.043 257.281);
     --color-slate-700: oklch(0.372 0.044 257.287);
@@ -524,6 +526,12 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
@@ -532,6 +540,9 @@
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
+  }
+  .h-auto {
+    height: auto;
   }
   .h-full {
     height: 100%;
@@ -563,6 +574,12 @@
   .w-9 {
     width: calc(var(--spacing) * 9);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
@@ -577,6 +594,9 @@
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .max-w-md {
     max-width: var(--container-md);
@@ -1002,6 +1022,13 @@
       margin-block-end: calc(calc(var(--spacing) * 0.5) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-6 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1278,6 +1305,9 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-green-100 {
+    background-color: var(--color-green-100);
+  }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
   }
@@ -1489,6 +1519,9 @@
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1668,6 +1701,9 @@
   }
   .text-gray-900 {
     color: var(--color-gray-900);
+  }
+  .text-green-500 {
+    color: var(--color-green-500);
   }
   .text-orange-500 {
     color: var(--color-orange-500);
