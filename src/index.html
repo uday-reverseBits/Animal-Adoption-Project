@@ -81,10 +81,7 @@
                             class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
                             Adopt Me
                         </button>
-                        <button
-                            class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
-                            Details
-                        </button>
+
                     </div>
                 </div>
             </div>
@@ -106,10 +103,7 @@
                             class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
                             Adopt Me
                         </button>
-                        <button
-                            class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
-                            Details
-                        </button>
+
                     </div>
                 </div>
             </div>
@@ -131,10 +125,7 @@
                             class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
                             Adopt Me
                         </button>
-                        <button
-                            class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
-                            Details
-                        </button>
+
                     </div>
                 </div>
             </div>
@@ -156,10 +147,7 @@
                             class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
                             Adopt Me
                         </button>
-                        <button
-                            class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
-                            Details
-                        </button>
+
                     </div>
                 </div>
             </div>
@@ -181,10 +169,7 @@
                             class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
                             Adopt Me
                         </button>
-                        <button
-                            class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
-                            Details
-                        </button>
+
                     </div>
                 </div>
             </div>
@@ -207,10 +192,7 @@
                             class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md transition-all">
                             Adopt Me
                         </button>
-                        <button
-                            class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-2 rounded-md transition-all">
-                            Details
-                        </button>
+
                     </div>
                 </div>
             </div>
@@ -219,9 +201,9 @@
         <!-- Adoption Form Modal -->
         <div id="adoptionModal"
             class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4 max-h-[90vh] overflow-hidden">
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-semibold">Adopt <span id="selectedPet" class="text-orange-500"></span></h2>
+                    <h2 class="text-2xl font-semibold">Adopt <span id="selectedPet" class="text-500"></span></h2>
                     <button onclick="closeAdoptionForm()" class="text-gray-500 hover:text-gray-700">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -237,7 +219,7 @@
                             Name
                         </label>
                         <input type="text" id="name" name="name" required
-                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring--500"
                             placeholder="Your full name">
                     </div>
 
@@ -247,7 +229,7 @@
                             Email
                         </label>
                         <input type="email" id="email" name="email" required
-                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring--500"
                             placeholder="your@email.com">
                     </div>
 
@@ -257,7 +239,7 @@
                             Phone Number
                         </label>
                         <input type="tel" id="phone" name="phone" required
-                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus-500"
                             placeholder="Your phone number">
                     </div>
 
@@ -267,7 +249,7 @@
                             Address
                         </label>
                         <textarea id="address" name="address" required
-                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 h-24"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring--500 h-24"
                             placeholder="Your full address"></textarea>
                     </div>
 
@@ -277,7 +259,7 @@
                             Upload Your Photo
                         </label>
                         <input type="file" id="photo" name="photo" required accept="image/*"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-500">
                     </div>
 
                     <!-- Submit Button -->
@@ -305,12 +287,12 @@
 
                 <div class="space-y-6">
                     <div class="text-center mb-6">
-                        <div class="w-20 h-20 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <!-- <div class="w-20 h-20 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4">
                             <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg>
-                        </div>
+                        </div> -->
                         <p class="text-xl font-semibold text-gray-800">Thank you for your application!</p>
                         <p class="text-gray-600">We'll review your application and contact you soon.</p>
                     </div>
@@ -352,6 +334,10 @@
                 </div>
             </div>
         </div>
+
+        <!-- Adopted Animals Section -->
+        <section id="adopted-animals" class="container mx-auto px-4 py-12">
+        </section>
     </main>
 
     <script src="script.js"></script>
